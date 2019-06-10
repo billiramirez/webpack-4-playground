@@ -8,5 +8,11 @@ const heading = new Heading();
 heading.render();
 helloWorldButton.render();
 
+if(process.env.NODE_ENV === 'production'){
+  console.log('production');
+}else{
+  console.log('developtment');
+}
 
-const ten = 210;
+helloWorldButton.methodThatDoesNotExist();
+
